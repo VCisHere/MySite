@@ -1,0 +1,215 @@
+body {
+  font-family: sans-serif;
+}
+
+body.light {
+    background-color: #EAEAEA;
+}
+
+.light a
+{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.overlay
+{
+    position: absolute;
+    opacity: 1;
+    height: 17rem;
+    width: 100%;
+    z-index: -1;
+    background-color: #777777;
+}
+
+.bg
+{
+    position: fixed;
+    z-index: -2;
+    background-color: #EAEAEA;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.main.article-title
+{
+    margin-top:2rem;
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.main.abstract
+{
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.main.date
+{
+    color: #999;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.main.content
+{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.header-nav
+{
+    margin-top:4rem;
+    width:100%;
+    height:100%;
+    transition:-webkit-transform .3s ease-in;
+    transition:transform .3s ease-in;
+    transition:transform .3s ease-in,-webkit-transform .3s ease-in;
+}
+
+.header-nav .social
+{
+    text-align:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:left;
+}
+
+.header-nav .social a
+{
+    border-radius:50%;
+    display:-moz-inline-stack;
+    display:inline-block;
+    vertical-align:middle;
+    *vertical-align:auto;
+    zoom:1;
+    *display:inline;
+    margin:0 8px 15px;
+    transition:.3s;
+    text-align:center;
+    color:#fff;
+    opacity:.7;
+    width:28px;
+    height:28px;
+    line-height:26px;
+}
+
+.header-nav .social a:hover
+{
+    opacity:1;
+}
+
+.header-nav .social a.wechat
+{
+    background:#24DB5A;
+    border:1px solid #24DB5A;
+}
+
+.header-nav .social a.wechat:hover
+{
+    border:1px solid #24DB5A;
+}
+
+.header-nav .social a.qq
+{
+    background:#39C7F7;
+    border:1px solid #39C7F7;
+}
+
+.header-nav .social a.qq:hover
+{
+    border:1px solid #39C7F7;
+}
+
+.header-nav .social a.weibo
+{
+    background:#F44336;
+    border:1px solid #F44336;
+}
+
+.header-nav .social a.weibo:hover
+{
+    border:1px solid #F44336;
+}
+
+.header-nav .social a.qqzone
+{
+    background:#FFCD01;
+    border:1px solid #FFCD01;
+}
+
+.header-nav .social a.qqzone:hover
+{
+    border:1px solid #FFCD01;
+}
+
+.header-nav .social a.zhihu
+{
+    background:#0078d8;
+    border:1px solid #0078d8;
+}
+
+.header-nav .social a.zhihu:hover
+{
+    border:1px solid #0078d8;
+}
+
+.header-nav .social a.bilibili
+{
+    background:#e15280;
+    border:1px solid #e15280;
+}
+
+.header-nav .social a.bilibili:hover
+{
+    border:1px solid #e15280;
+}
+
+.header-nav .social a.github
+{
+    background:#afb6ca;
+    border:1px solid #afb6ca;
+}
+
+.header-nav .social a.github:hover
+{
+    border:1px solid #afb6ca;
+}
+
+.header-nav .social a.mail
+{
+    background:#005a87;
+    border:1px solid #005a87;
+}
+
+.header-nav .social a.mail:hover
+{
+    border:1px solid #005a87;
+}
+
+.header-nav .social .home
+{
+    background:#35363A;
+    border:1px solid #35363A;
+}
+
+.header-nav .social .home:hover
+{
+    border:1px solid #35363A;
+}

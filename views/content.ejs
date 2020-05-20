@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hi</title>
+
+</head>
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="fonts/iconfont.css">
+<link rel="stylesheet" href="https://unpkg.com/katex@0.10.0/dist/katex.min.css" />
+<link rel="stylesheet" href="stylesheets/hello.css">
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <div class="light">
+
+        <div class="overlay"></div>
+
+        <div class="container" style="margin-left:auto;margin-right:auto;max-width:60rem;padding:5rem 2rem">
+
+            <h1 style="font-size:3rem;font-weight:1;color:#dcdcdc;line-height:3rem;margin-bottom:0;margin-top:0"> VC 的个人站</h1>
+
+            <div class="header-nav">
+
+                <div class="social">
+
+                    <a class="wechat" draggable="false"
+                        href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MjgxMjE5OA==&scene=124#wechat_redirect"
+                        title="wechat">
+                        <span class="iconfont icon-wechat"></span>
+                    </a>
+
+                    <a class="github" draggable="false" href="https://www.github.com/" title="github">
+                        <span class="iconfont icon-github"></span>
+                    </a>
+
+                    <a class="bilibili" draggable="false" href="https://www.bilibili.com/" title="bilibili">
+                        <span class="iconfont icon-bilibili"></span>
+                    </a>
+
+                    <a class="mail" draggable="false" href="mailto:386401059@qq.com" title="mail">
+                        <span class="iconfont icon-mail"></span>
+                    </a>
+
+                    <a class="home" draggable="false" href="../" title="home">
+                        <span class="iconfont icon-home"></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="main">
+
+                <div class="panel panel-default" style="margin-top: 1rem;">
+                    <div class="panel-heading">
+                        <div class="main article-title">
+                            <a> <%- data.title %> </a>
+                        </div>
+                                        
+                        <div class="main date">
+                            <span class="iconfont icon-calendar"></span>
+                            <%- data.year %>-<%- data.month %>-<%- data.date %>
+                        </div>
+
+                        <div class="main abstract">
+                            <%- data.abstract %>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="main content">
+                            <%- data.mdHtml %> 
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>

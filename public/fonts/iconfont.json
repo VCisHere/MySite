@@ -1,0 +1,79 @@
+{
+  "id": "1816101",
+  "name": "personal-site",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7239953",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "1037628",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "8474278",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "1368614",
+      "name": "share-qq-zone",
+      "font_class": "qqzone",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1546598",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "348504",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "ead8",
+      "unicode_decimal": 60120
+    },
+    {
+      "icon_id": "549691",
+      "name": "mail",
+      "font_class": "mail",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "739114",
+      "name": "日历",
+      "font_class": "calendar",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "4936957",
+      "name": "zhihu",
+      "font_class": "zhihu",
+      "unicode": "e87c",
+      "unicode_decimal": 59516
+    },
+    {
+      "icon_id": "10918080",
+      "name": "bilibili-line",
+      "font_class": "bilibili",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    }
+  ]
+}

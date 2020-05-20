@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hi</title>
+
+</head>
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="fonts/iconfont.css">
+<link rel="stylesheet" href="stylesheets/hello.css">
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+
+<div class = "light">
+
+    <div class="overlay"></div>
+    
+
+    <div class = "container" style="margin-left:auto;margin-right:auto;max-width:60rem;padding:5rem 2rem;">
+
+        <h1 style="font-size:3rem;font-weight:1;color:#dcdcdc;line-height:3rem;margin-bottom:0;margin-top:0"> VC 的个人站</h1>
+
+        <div class="header-nav">
+
+            <div class="social">
+
+                <a class="wechat" draggable="false" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MjgxMjE5OA==&scene=124#wechat_redirect" title="wechat">
+                    <span class="iconfont icon-wechat"></span>
+                </a>
+                
+                <a class="github" draggable="false" href="https://github.com/VCisHere" title="github">
+                    <span class="iconfont icon-github"></span>
+                </a>
+
+                <a class="bilibili" draggable="false" href="https://space.bilibili.com/62911344/?share_source=copy_link&share_medium=iphone&bbid=ZC40B5C628687D8448B48625F20D0207713B&ts=1589963086" title="bilibili">
+                    <span class="iconfont icon-bilibili"></span>
+                </a>
+
+                <a class="mail" draggable="false" href="mailto:386401059@qq.com" title="mail">
+                    <span class="iconfont icon-mail"></span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="main">
+            
+            <% for (var i = 0; i < data.length; i++) { %>
+                <div class="main article-title">
+                    <a href="/<%- data[i].dir %>"> <%- data[i].title %> </a>
+                </div>
+
+                <div class="main date">
+                    <span class="iconfont icon-calendar"></span>
+                    <%- data[i].year %>-<%- data[i].month %>-<%- data[i].date %>
+                </div>
+
+                <div class="main abstract">
+                    <%- data[i].abstract %>
+                </div>
+                <hr>
+            <% } %>
+
+        </div>
+
+        <div class="tail">
+
+            <span>第 <%- pageInfo.nowPage %> 页 </span>
+            <span>共 <%- pageInfo.totalPage %> 页 </span>
+
+            <div class="input-group" style="margin-left: 0rem; width: 15rem;">
+                <input id="inputPageNum" type="text" class="form-control">
+                <span class="input-group-btn">
+                        <script type="text/javascript">
+                            function goPage() {
+                                var pageNum = parseInt(document.getElementById("inputPageNum").value);
+                                window.location.href = "/?page=" + pageNum;
+                            }
+                        </script>
+                    <button class="btn btn-default" type="button" onclick="goPage()">跳转</button>
+                </span>
+            </div><!-- /input-group -->
+
+            <ul class="pagination">
+                <% if (pageInfo.nowPage != 1) { %>
+                    <li><a href="/?page=<%- parseInt(pageInfo.nowPage) - 1 %> ">&laquo;</a></li>
+                <% } %> 
+
+                <% if (pageInfo.nowPage < 5) { %>
+                    <% for (var i = 1; i < pageInfo.nowPage; i++) { %>
+                        <li><a href="/?page=<%- i %>"> <%- i %>  </a></li>
+                    <% } %>
+                    
+                <% } else { %>
+                    <li><a href="/?page=1"> 1 </a></li>
+                    <li><a>...</a></li>
+                    <% for (var i = parseInt(pageInfo.nowPage) - 3; i < pageInfo.nowPage; i++) { %>
+                        <li><a href="/?page=<%- i %>"> <%- i %> </a></li>
+                    <% } %>
+                <% } %> 
+
+                <li class="active"><a href="/?page=<%- pageInfo.nowPage %>"> <%- pageInfo.nowPage %> </a></li>
+
+                <% if (pageInfo.totalPage - pageInfo.nowPage < 5) { %>
+                    <% for (var i = parseInt(pageInfo.nowPage) + 1; i <= pageInfo.totalPage; i++) { %>
+                        <li><a href="/?page=<%- i %>"> <%- i %> </a></li>
+                    <% } %>  
+                <% } else { %>
+                    <% for (var i = parseInt(pageInfo.nowPage) + 1; i <= parseInt(pageInfo.nowPage) + 3; i++) { %>
+                        <li><a href="/?page=<%- i %>"> <%- i %> </a></li>
+                    <% } %>
+                    <li><a>...</a></li>
+                    <li><a href="/?page=<%- pageInfo.totalPage %>"> <%- pageInfo.totalPage %> </a></li>
+                <% } %> 
+
+                <% if (pageInfo.nowPage != pageInfo.totalPage) { %> 
+                    <li><a href="/?page=<%- parseInt(pageInfo.nowPage) + 1 %>">&raquo;</a></li>
+                <% } %> 
+            </ul>
+            
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
