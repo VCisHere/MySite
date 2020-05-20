@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var showdown = require('showdown');
-var showdownKatex = require('showdownkatex');
+var showdownKatex = require('showdown-katex');
 var router = express.Router();
 var dirfather = 'public/_data';
 
