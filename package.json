@@ -16,6 +16,7 @@
     "jade": "~1.11.0",
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
     "showdown": "^1.9.1",
     "showdown-katex": "^0.8.0"
   }
